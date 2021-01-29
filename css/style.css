@@ -1,0 +1,177 @@
+/* ===============Продключаем шрифты с сайта https://fonts.google.com============*/
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap");
+/* ===============Продключаем шрифты файлами	============*/
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/* ===============================Стили обнуления =====================================*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* --------------- */
+body{
+	color: #222831;
+	line-height: 1;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+/* ===============================Задаем стили header=====================================*/
+.header {
+	background-color: aliceblue;
+}
+/* ===============================Задаем стили логотипа =====================================*/
+.header .header__logo p, .footer__logo p{
+	font-family: 'Playfair Display';
+	font-size: 52px;
+	line-height: 128%;
+	font-weight: 700;
+	color: #10375C;
+	letter-spacing: 15px;
+	text-shadow: 1px 1px 1px black;
+}
+.header .header__logo p span, .footer__logo p span{
+	color: brown;
+	text-transform: uppercase;
+	text-shadow: 4px 2px 1px grey;
+
+}
+/* ===============================Задаем стили логотипа =====================================*/
+/* ===============================Задаем стили меню =====================================*/
+.nav {
+	background-color: ivory;
+}
+.nav li{
+	text-align: center;
+}
+.nav li a {
+	line-height: 200%;
+	font-weight: bold;
+	color: #222831;
+	text-decoration: underline;
+
+}
+/* ===============================Задаем стили меню =====================================*/
+.user{
+background-color: khaki;
+}
+.user p{
+	text-align: right;
+	color: #FF5722;
+	font-weight: bold;
+}
+/* ===============================Задаем стили header=====================================*/
+/* ===============================Задаем стили контента=====================================*/
+.main {
+	background-color: lightcyan;
+}
+.main__title h2{
+	font-family: "Lora";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 129%;
+	color: rgba(16, 55, 92, 0.8);
+	text-indent: 20px;
+}
+.main__title span{
+color: rgb(221, 44, 0, 1.0);
+}
+.main__text p {
+	width: 50%;
+	text-indent: 20px;
+	color: #6A6A6A;
+	font-weight: 500;
+	word-spacing: 5px;
+}
+/* ===============================Задаем стили тени=====================================*/
+.main__shadow p{
+	color: rgba(13, 44, 74, 1.0);
+	text-align: 150%;
+	font-size: 68px;
+	height: 250px;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	text-shadow: -5px 5px 0px  rgba(13, 44, 74, 0.8), -10px 10px 0px  rgba(13, 44, 74, 0.6), -15px 15px 0px  rgba(13, 44, 74, 0.4);
+}
+/* ===============================Задаем стили контента=====================================*/
+/* ===============================Задаем стили footer=====================================*/
+.footer {
+	background: #0D2C4A;
+}
+.footer__logo p{
+	color: #FFFFFF;
+	font-family: "Lora";
+}
+.footer__text p{
+	color: #F8F8F8;
+	line-height: 162.5%;
+
+}
+.footer__contact p, a{
+	color: #F8F8F8;
+	line-height: 162.5%;
+	letter-spacing: 5px;
+	word-spacing: 2px;
+}
+.footer__contact a span{
+	font-size: 28px;
+	color: maroon;
+	font-weight: bold;
+}
+.footer__contact a{
+	white-space:nowrap
+}
+/* ===============================Задаем стили footer=====================================*/
